@@ -1,0 +1,13 @@
+1.	Technologie programistyczne:
+- html + php + javascript (+ew. mysql)
+2.	Harmonogram Wstępny
+1) 29 IV – Ustalenie listy zadań, rozdział zadań, harmonogram wykonania zadań
+2) 6 V – Rozpoczęcie implementacji
+3) 27 V – Ukończenie podstawowych funkcjonalności
+4) 10 VI – Ukończenie dodatkowych funkcjonalności, testowanie
+5) 17 VI – ukończenie projektu
+3.	Procesy biznesowe web service’ów
+- wczytanie listy gier, 
+- wczytanie danych gier
+- ustalenie preferencji gracza
+- wybór najlepiej dopasowanej gry
