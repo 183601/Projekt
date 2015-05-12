@@ -7,7 +7,20 @@ echo"<div><center><font color = red><b>Nie wprowadzono loginu</font></center><di
 if (strlen($_POST['username'])>0){
 $tekst = $_POST['username'];
 
-echo"Twój login to: <br>$tekst</br>";
-  }
+$sUrl	= "http://people.ign.com/$tekst/games";
+$sSearch = 'var pageOwnerId = ';
+ 
+$string = file_get_contents( $sUrl );
+
+if ( strPos( $string, $sSearch ) !== false )
+{
+	print "Znaleziono: $string";
+}
+
+else
+{
+	print 'Brak danych';
+}
+}
 }
 ?>
