@@ -14,7 +14,11 @@ $string = file_get_contents( $sUrl );
 
 if ( strPos( $string, $sSearch ) !== false )
 {
-	print "Znaleziono: $string";
+	$tt = '<textarea>'.$string.'</textarea>';
+	preg_match ('#var pageOwnerId = "([a-zA-Z0-9_ ]+)"#', $tt, $wynik);
+	print_r ($wynik[1]);
+	header("Location: http://social-services.ign.com/v1.0/social/mediaItems/excel?personId=$wynik[1]");
+	/* Redirect browser */ exit;
 }
 
 else
